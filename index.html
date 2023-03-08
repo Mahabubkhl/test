@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Some thing</h1>
+   <input type="text" id="m00">  <br> <br>
+   <button onclick="myFunction()" >click on  </button> 
+
+
+   <script>
+              function  myFunction( ){
+               
+                let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*abcdefghijklmnopqrstuvwxyz!@#$%&*0123456789!@#$%&*';
+    
+    const charactersLength = characters.length;
+    let counter = 0;
+    while (counter < 7) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength) );
+      counter += 1;
+    }
+   
+
+                document.getElementById("m00").value = result ;
+
+              }
+              
+              
+              
+
+   </script>
+    
+</body>
+</html>
